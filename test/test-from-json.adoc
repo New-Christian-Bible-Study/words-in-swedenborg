@@ -1,0 +1,141 @@
+== A
+
+[[a-posteriori]]
+**A POSTERIORI** (L.) = from lower things +
+{nbsp}{nbsp}[[a-posteriori-reasoning]]
+{nbsp}{nbsp}**A POSTERIORI REASONING** = reasoning from facts; inductive reasoning
+
+[[a-priori]]
+**A PRIORI** (L.) = from prior things +
+{nbsp}{nbsp}[[a-priori-reasoning]]
+{nbsp}{nbsp}**A PRIORI REASONING** = reasoning from principles; deductive reasoning
+
+[[abstract]]
+**ABSTRACT** (adj.) = apart from any specific example or reality
+
+[[accede]]
+**ACCEDE** = approach; agree +
+Opp. **RECEDE**
+
+[[accidental]]
+**ACCIDENTAL** (adj.) [misleading] = not essential; non-essential
+
+[[acclivity]]
+**ACCLIVITY** (n.) = upward slope +
+Opp. **DECLIVITY**
+
+[[adytum]]
+**ADYTUM** (pl. adyta) = inmost part of the temple which only the priest could enter
+
+[[affinity]]
+**AFFINITY** = relationship by marriage or other connection +
+See also: xref:consanguinity[**CONSANGUINITY**]
+
+[[agent]]
+**AGENT** = something that acts +
+Opp. **PATIENT**
+
+[[animus]]
+**ANIMUS** (pl. animi) = lower level of the mind; temperament; personality
+
+[[arcanum]]
+**ARCANUM** (pl. arcana) (L.) = secret; something hidden
+
+[[astroid]]
+**ASTROID** = an unknown precious stone (L. _**ASTROITES**_, also trans. "star-stone") +
+See also: xref:astroites[**ASTROITES**]
+
+[[astroites]]
+**ASTROITES** (L.) = star-stone; a precious stone
+
+
+== B
+
+[[being-esse]]
+**BEING** (L. _ESSE_) (n.) = being; reality; essential quality
+
+[[betroth]]
+**BETROTH** = promise in marriage; become engaged +
+(also transl. **AFFIANCE**)
+
+[[blain]]
+**BLAIN** = blister; pimple +
+(also transl. **PUSTULE**)
+
+[[border]]
+**BORDER** = external covering of the spirit; border between the spiritual and natural +
+See also: xref:limbus[**LIMBUS**], xref:cutaneous-envelope[**CUTANEOUS ENVELOPE**]
+
+
+== C
+
+[[celestial]]
+**CELESTIAL** =
+1. supremely heavenly; having a quality of goodness and love
+2. having to do with the sky +
+{nbsp}{nbsp}[[celestial-angel]]
+{nbsp}{nbsp}**CELESTIAL ANGEL** = angel of the highest heaven +
+{nbsp}{nbsp}[[celestial-church]]
+{nbsp}{nbsp}**CELESTIAL CHURCH** =
+{nbsp}{nbsp}1. Most Ancient Church
+{nbsp}{nbsp}2. heavenly church +
+{nbsp}{nbsp}[[celestial-good]]
+{nbsp}{nbsp}**CELESTIAL GOOD** = heavenly goodness +
+{nbsp}{nbsp}[[celestial-heaven]]
+{nbsp}{nbsp}**CELESTIAL HEAVEN** = third or highest heaven
+
+[[charity]]
+**CHARITY** [misleading] = love of the neighbor
+
+[[complex]]
+**COMPLEX** (n.) = whole made up of many connected parts
+
+[[conjugial]]
+**CONJUGIAL** (n.) /conju'jul/ [new word] =
+1. essential marriage principle
+2. positive attitude toward marriage
+
+[[conjugial-adj]]
+**CONJUGIAL** (adj.) [new word] = belonging to marriage and the love married partners have for each other +
+{nbsp}{nbsp}[[conjugial-age]]
+{nbsp}{nbsp}**CONJUGIAL AGE** = marriageable age +
+{nbsp}{nbsp}[[conjugial-bed]]
+{nbsp}{nbsp}**CONJUGIAL BED** = marriage bed +
+{nbsp}{nbsp}[[conjugial-love]]
+{nbsp}{nbsp}**CONJUGIAL LOVE** = love married partners have for each other
+
+[[consanguinity]]
+**CONSANGUINITY** = relationship by blood +
+See also: xref:affinity[**AFFINITY**]
+
+[[cutaneous-envelope]]
+**CUTANEOUS ENVELOPE** = external covering of the spirit +
+See also: xref:border[**BORDER**], xref:limbus[**LIMBUS**]
+
+
+== L
+
+[[limbus]]
+**LIMBUS** (L.) = border; external covering of the spirit +
+See also: xref:border[**BORDER**]
+
+
+== Q
+
+[[quasi]]
+**QUASI** (L.) = as if; seeming
+
+
+== R
+
+[[rapine]]
+**RAPINE** (n.) = plunder; preying upon
+
+
+== S
+
+[[save]]
+**SAVE** (prep.) [misleading] = except
+
+[[sensuous]]
+**SENSUOUS** (adj.) [misleading] = involving the senses; sensual

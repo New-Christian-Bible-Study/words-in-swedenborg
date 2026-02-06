@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "swedenborg-glossary.schema.json",
+  "title": "Swedenborg Glossary",
+  "description": "Schema for word definitions from Words in Swedenborg. Uses slugified keys (e.g., 'a-posteriori') for fast lookup and AI/RAG compatibility. Text formatting conventions: keywords are stored in lowercase (presentation-agnostic), |word| marks a keyword reference in definitions, _text_ marks italic text, _|word|_ marks italic keyword references.",
+  "type": "object",
+  "required": ["version", "entries"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Reference to the JSON schema for this file"
+    },
+    "version": {
+      "type": "string",
+      "description": "Schema/data version for compatibility tracking",
+      "pattern": "^\\d+\\.\\d+$"
+    },
+    "source": {
+      "type": "string",
+      "description": "Source attribution for the glossary content"
+    },
+    "entries": {
+      "type": "object",
+      "description": "Map of slug keys to entry objects",
+      "additionalProperties": false,
+      "patternProperties": {
+        "^[a-z][a-z0-9-]*$": {
+          "$ref": "#/$defs/entry"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "required": ["definitions"],
+      "additionalProperties": false,
+      "properties": {
+        "word": {
+          "type": "string",
+          "description": "The term being defined. Only present when it differs from the slug (e.g., 'conjugial-adj' has word 'conjugial'). If omitted, derive by replacing hyphens with spaces.",
+          "examples": ["conjugial", "a posteriori"]
+        },
+        "origin": {
+          "type": "string",
+          "enum": ["L.", "Gr.", "Heb.", "Fr."],
+          "description": "Language of origin: Fr. = French, Gr. = Greek, Heb. = Hebrew, L. = Latin"
+        },
+        "latin_word": {
+          "type": "string",
+          "description": "The specific Latin/Greek/Hebrew word when provided (e.g., TERRA, TELLUS)",
+          "examples": ["terra", "tellus", "arcana"]
+        },
+        "part_of_speech": {
+          "type": "string",
+          "enum": ["adj.", "adv.", "conj.", "n.", "prep.", "v."],
+          "x-enum-descriptions": {
+            "adj.": "adjective",
+            "adv.": "adverb",
+            "conj.": "conjunction",
+            "n.": "noun",
+            "prep.": "preposition",
+            "v.": "verb"
+          }
+        },
+        "pronunciation": {
+          "type": "string",
+          "description": "Pronunciation guide",
+          "examples": ["conju'jul", "ar kay' na"]
+        },
+        "archaic_usage": {
+          "type": "string",
+          "description": "Reason why this word is used in an older sense that differs from modern usage"
+        },
+        "theological_term": {
+          "type": "string",
+          "description": "Reason why Swedenborg gives this word a specific doctrinal meaning distinct from common usage"
+        },
+        "new_word": {
+          "type": "boolean",
+          "description": "True if this is a new word not found in standard English dictionaries"
+        },
+        "plural": {
+          "type": "string",
+          "description": "Plural form of the word (lowercase)",
+          "examples": ["arcana", "genii", "adyta"]
+        },
+        "definitions": {
+          "type": "array",
+          "description": "One or more definitions. May contain formatting markers: |word| for keyword references, _text_ for italic, _|word|_ for italic keyword references",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "examples": [
+            ["heavenly goodness"],
+            ["teaching; body of beliefs"],
+            ["approach; agree (opp. of |recede|)"]
+          ]
+        },
+        "opposite_slug": {
+          "type": "string",
+          "description": "Slug of the antonym entry (the opposite word must exist as an entry in the glossary)",
+          "pattern": "^[a-z][a-z0-9-]*$",
+          "examples": ["declivity", "acclivity"]
+        },
+        "also_translated": {
+          "type": "array",
+          "description": "Alternative translation words (lowercase)",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "examples": [
+            ["affiance"],
+            ["pustule"]
+          ]
+        },
+        "see_also": {
+          "type": "array",
+          "description": "Slugs of related entries for explicit cross-referencing (complements inline |word| markers in definitions)",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "minItems": 1,
+          "examples": [
+            ["recede"],
+            ["celestial", "spiritual"]
+          ]
+        },
+        "parent": {
+          "type": "string",
+          "description": "Slug of parent entry for related/sub-entries (e.g., 'celestial-angel' has parent 'celestial')",
+          "examples": ["celestial", "conjugial", "influx"]
+        }
+      }
+    }
+  }
+}

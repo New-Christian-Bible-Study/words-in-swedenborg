@@ -1,0 +1,27 @@
+[.text-center]
+ISBN 0-910557-13-6 +
+{empty} +
+Published by +
+General Church Publication Committee +
+First edition 1985 +
+{empty} +
+Printed by +
+General Church Press +
+Bryn Athyn, Pennsylvania +
+United States of America
+
+{empty} +
+{empty} +
+
+[.text-center]
+_This digital copy of the book has been made freely available with the permission of General Church Publication Committee, Box 743, Bryn Athyn, Pennsylvania, 19006, USA._
+
+{empty} +
+
+
+_This work is licensed under a https://creativecommons.org/licenses/by-nc-sa/4.0/[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License]:_ +
+
+_* You may share and adapt this work. +
+* You must give appropriate credit, link to the license, and indicate any changes. +
+* You may not use the work for commercial purposes. +
+* If you remix, transform, or build upon the material, you must distribute your contributions under the same license._

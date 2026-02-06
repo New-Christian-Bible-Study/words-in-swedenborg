@@ -1,0 +1,27 @@
+extends: default
+page:
+  numbering:
+    start-at: body
+running-content:
+  start-at: body
+title-page:
+  footer:
+    recto:
+      content: ~
+    verso:
+      content: ~
+footer:
+  recto:
+    left:
+      content: ~
+    center:
+      content: '{page-number}'
+    right:
+      content: ~
+  verso:
+    left:
+      content: ~
+    center:
+      content: '{page-number}'
+    right:
+      content: ~

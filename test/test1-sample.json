@@ -1,0 +1,268 @@
+{
+  "$schema": "./swedenborg-glossary.schema.json",
+  "version": "1.0",
+  "source": "Words in Swedenborg by Rev. Frank Rose",
+  "entries": {
+    "a-posteriori": {
+      "origin": "L.",
+      "definitions": [
+        "from lower things"
+      ]
+    },
+    "a-posteriori-reasoning": {
+      "definitions": [
+        "reasoning from facts; inductive reasoning"
+      ],
+      "parent": "a-posteriori"
+    },
+    "a-priori": {
+      "origin": "L.",
+      "definitions": [
+        "from prior things"
+      ]
+    },
+    "a-priori-reasoning": {
+      "definitions": [
+        "reasoning from principles; deductive reasoning"
+      ],
+      "parent": "a-priori"
+    },
+    "abstract": {
+      "part_of_speech": "adj.",
+      "definitions": [
+        "apart from any specific example or reality"
+      ]
+    },
+    "accidental": {
+      "part_of_speech": "adj.",
+      "archaic_usage": "Latin philosophical term, incidental/non-essential",
+      "definitions": [
+        "not essential; non-essential"
+      ]
+    },
+    "sensuous": {
+      "part_of_speech": "adj.",
+      "archaic_usage": "Older neutral sense 'of the senses'",
+      "definitions": [
+        "involving the senses; sensual"
+      ]
+    },
+    "charity": {
+      "theological_term": "Swedenborg's doctrinal term: love of the neighbor",
+      "definitions": [
+        "love of the neighbor"
+      ]
+    },
+    "arcanum": {
+      "origin": "L.",
+      "plural": "arcana",
+      "definitions": [
+        "secret; something hidden"
+      ]
+    },
+    "quasi": {
+      "origin": "L.",
+      "definitions": [
+        "as if; seeming"
+      ]
+    },
+    "complex": {
+      "part_of_speech": "n.",
+      "definitions": [
+        "whole made up of many connected parts"
+      ]
+    },
+    "rapine": {
+      "part_of_speech": "n.",
+      "definitions": [
+        "plunder; preying upon"
+      ]
+    },
+    "acclivity": {
+      "part_of_speech": "n.",
+      "opposite_slug": "declivity",
+      "definitions": [
+        "upward slope"
+      ]
+    },
+    "agent": {
+      "opposite_slug": "patient",
+      "definitions": [
+        "something that acts"
+      ]
+    },
+    "adytum": {
+      "plural": "adyta",
+      "definitions": [
+        "inmost part of the temple which only the priest could enter"
+      ]
+    },
+    "animus": {
+      "plural": "animi",
+      "definitions": [
+        "lower level of the mind; temperament; personality"
+      ]
+    },
+    "save": {
+      "part_of_speech": "prep.",
+      "archaic_usage": "Archaic preposition 'except'",
+      "definitions": [
+        "except"
+      ]
+    },
+    "betroth": {
+      "also_translated": [
+        "affiance"
+      ],
+      "definitions": [
+        "promise in marriage; become engaged"
+      ]
+    },
+    "blain": {
+      "also_translated": [
+        "pustule"
+      ],
+      "definitions": [
+        "blister; pimple"
+      ]
+    },
+    "celestial": {
+      "definitions": [
+        "supremely heavenly; having a quality of goodness and love",
+        "having to do with the sky"
+      ]
+    },
+    "celestial-angel": {
+      "definitions": [
+        "angel of the highest heaven"
+      ],
+      "parent": "celestial"
+    },
+    "celestial-church": {
+      "definitions": [
+        "Most Ancient Church",
+        "heavenly church"
+      ],
+      "parent": "celestial"
+    },
+    "celestial-good": {
+      "definitions": [
+        "heavenly goodness"
+      ],
+      "parent": "celestial"
+    },
+    "celestial-heaven": {
+      "definitions": [
+        "third or highest heaven"
+      ],
+      "parent": "celestial"
+    },
+    "conjugial": {
+      "part_of_speech": "n.",
+      "pronunciation": "conju'jul",
+      "new_word": true,
+      "definitions": [
+        "essential marriage principle",
+        "positive attitude toward marriage"
+      ]
+    },
+    "conjugial-adj": {
+      "word": "conjugial",
+      "part_of_speech": "adj.",
+      "new_word": true,
+      "definitions": [
+        "belonging to marriage and the love married partners have for each other"
+      ]
+    },
+    "conjugial-age": {
+      "definitions": [
+        "marriageable age"
+      ],
+      "parent": "conjugial-adj"
+    },
+    "conjugial-bed": {
+      "definitions": [
+        "marriage bed"
+      ],
+      "parent": "conjugial-adj"
+    },
+    "conjugial-love": {
+      "definitions": [
+        "love married partners have for each other"
+      ],
+      "parent": "conjugial-adj"
+    },
+    "accede": {
+      "opposite_slug": "recede",
+      "definitions": [
+        "approach; agree"
+      ]
+    },
+    "astroid": {
+      "definitions": [
+        "an unknown precious stone (L. _|astroites|_, also trans. \"star-stone\")"
+      ],
+      "see_also": [
+        "astroites"
+      ]
+    },
+    "being-esse": {
+      "word": "being",
+      "origin": "L.",
+      "latin_word": "esse",
+      "part_of_speech": "n.",
+      "definitions": [
+        "being; reality; essential quality"
+      ]
+    },
+    "border": {
+      "definitions": [
+        "external covering of the spirit; border between the spiritual and natural"
+      ],
+      "see_also": [
+        "limbus",
+        "cutaneous-envelope"
+      ]
+    },
+    "affinity": {
+      "definitions": [
+        "relationship by marriage or other connection"
+      ],
+      "see_also": [
+        "consanguinity"
+      ]
+    },
+    "consanguinity": {
+      "definitions": [
+        "relationship by blood"
+      ],
+      "see_also": [
+        "affinity"
+      ]
+    },
+    "astroites": {
+      "origin": "L.",
+      "definitions": [
+        "star-stone; a precious stone"
+      ]
+    },
+    "limbus": {
+      "origin": "L.",
+      "definitions": [
+        "border; external covering of the spirit"
+      ],
+      "see_also": [
+        "border"
+      ]
+    },
+    "cutaneous-envelope": {
+      "definitions": [
+        "external covering of the spirit"
+      ],
+      "see_also": [
+        "border",
+        "limbus"
+      ]
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+{empty} +
+
+[.text-center]
+to Suzi Coughlin +
+whose desire to understand Swedenborg +
+and whose love of words +
+inspired this book
+
+<<<
+
+include::publication-info.adoc[]
+
+<<<
+
+[.text-center]
+[.big]*WORDS* +
+[.big]*IN SWEDENBORG*
+
+[.text-center]
+*AND THEIR MEANINGS IN MODERN ENGLISH*
+
+{empty} +
+
+[.text-center]
+by the Rev. Frank S. Rose
+
+<<<
+
+== Acknowledgments
+
+Many people have helped with this dictionary. My principal consultant was Jonathan Rose, who is now working on a Ph.D. in Latin with the idea of becoming a fully qualified translator of Swedenborg. Other people who have contributed are: Dr. John Chadwick, of Cambridge University in England, author of “A Lexicon to the Latin Text of the Theological Writings of Emanuel Swedenborg”. The Lexicon has been of great value. In addition he has given me the benefit of personal comments on early drafts. The Rev. John Elliott, current translator of Swedenborg’s longest work: The Arcana Ceolestia, has also written with suggestions, as have Mr. Richard Goerwitz III, and Dr. David Gladish, (currently rewriting some existing translations of the Writings into modern English). Suzi Coughlin, the Rev. Doug Taylor, and the Rev. Don Rose have provided useful input. I am indebted to Mr. Leon Rhodes for his work in getting the book published, and my son, Jeremy Rose, who has been a technical advisor and has seen the publication through to completion. Many others have helped in a variety of ways. 1 would like to offer special thanks to my wife, Louise, who has been a constant source of ideas and inspiration.
+
+== Introduction
+
+The Writings of Swedenborg are full of truth and beauty. even though he wrote so many years ago the teachings have not in the least faded. He wrote in simple and direct Latin. Within a short time after his death all of the theological works he had published were available in English and they have all remained in print to this day. But the English poses many challenges to a modern reader. Some of this is due to the fact that Latin is a very different language. For one thing it is possible to write long sentences in Latin and have them still be understandable, whereas English works better with short sentences. Vocabulary is another problem. Many of the words and phrases found in translations of Swedenborg are puzzling. The words may seem strange, or used in unusual ways. For one thing, Latin does not use the words "a", "an" or "the". It might make more sense in some cases to leave them out, or to interchange them. For another thing, adjectives are often used in Latin as nouns; this is why we find such words as "truths" and "internals." Some words have a meaning that is commonly known, but are also used at times to mean something else. For example "read" can either have its usual meaning, or mean "recite". In the dictionary we give more than one definition for such words. If the original word is repeated in the definitions, it is simply saying that it is used in the way the reader expects, plus the other uses listed. This little dictionary has been compiled to help readers get closer to the intended meaning.
+
+The entries fall into various categories:
+
+1. Latin, Greek and Hebrew
+2. New words
+3. Misleading words
+4. Adjectives used as nouns
+5. Phrases (such as "the celestial of the spiritual")
+6. Words that are not used as much now as they used to be (the bulk of the entries in this dictionary are in this group)
+7. Mistranslations (in some cases the translator made an error and so the meaning can only be discovered by looking at the original Latin)
+
+Not included: place names, anatomical words, diseases, people's names and some unusual words from the Bible.
+
+As I worked on this dictionary I found myself longing to see the day when the Writings of Swedenborg would be available in English as beautiful and simple as the Latin. I pray that this will offer some help until that day comes, in allowing more and more people to see past the clouds to the glory and sublime beauty within.
+
+[.text-right]
+Frank Rose, Tucson, 1985
+
+== Abbreviations
+
+[horizontal]
+adj.:: adjective
+L.:: Latin
+n.:: noun
+opp.:: opposite
+pl.:: plural
+prep.:: preposition
+transl.:: translated

@@ -1,0 +1,27 @@
+---
+description: Add coauthor attribution to git commits
+alwaysApply: true
+---
+
+# Git Commit Coauthor
+
+When creating git commits, add a coauthor line at the end of the commit message.
+
+## Format
+
+```
+<commit message>
+
+coauthor: Cursor
+```
+
+## Example
+
+```bash
+git commit -m "$(cat <<'EOF'
+Add validation for user input
+
+coauthor: Cursor
+EOF
+)"
+```

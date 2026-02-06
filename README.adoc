@@ -1,0 +1,61 @@
+= Words in Swedenborg - Digital Edition
+
+This project makes the glossary from link:https://newchurchbooks.com/product/words-in-swedenborg/[Words in Swedenborg and Their Meanings in Modern English] available in a machine-readable format. This serves two purposes: enabling export of the glossary to various formats, and providing a semantic resource for AI systems to interpret certain English words used in non-standard ways in translations of Swedenborg's Latin.
+
+The project also includes code and support files to generate an AsciiDoc version of the book, essentially a digital reproduction of the original paperback. This can then be converted to PDF, ePub, and other formats.
+
+Thanks to the General Church Publication Committee for making this digital copy available for free (see the LICENSE file for details). Thanks also to the maintainer of https://www.swedenborgstudy.com/[swedenborgstudy.com] for providing the glossary in HTML format for conversion to JSON, and for providing image files for the diagrams in the book.
+
+== Project Structure
+
+* `src/` - Source code for conversion scripts
+* `book/` - Book content (AsciiDoc source and images from the original book)
+* `test/` - Test files and sample data
+* `swedenborg-glossary.json` - The glossary data in JSON format
+* `swedenborg-glossary.schema.json` - JSON schema for validating glossary data
+
+== Usage
+
+A Makefile is provided that tracks dependencies so that changing source files automatically triggers rebuilding of dependent targets.
+
+[source,bash]
+----
+make                   # Build glossary AsciiDoc and run tests
+make pdf               # Generate PDF book
+make test              # Run all tests
+make clean             # Remove generated files
+make help              # Display all targets and dependencies
+----
+
+== Dependencies
+
+* Make
+* Python 3.9+
+* jsonschema (for validation)
+* asciidoctor-pdf (for PDF generation)
+
+Install Python dependencies with:
+
+[source,bash]
+----
+pip install -r requirements.txt
+----
+
+== The Glossary JSON File
+
+The `swedenborg-glossary.json` file is designed to be LLM-friendly:
+
+* **Structured data** - Each entry has clearly separated fields for word, origin, part of speech, definitions, and more
+* **Slugified keys** - Consistent, normalized identifiers (e.g., `a-posteriori-reasoning`) enable fast lookup
+* **Semantic relationships** - Fields like `parent`, `see_also`, and `opposite_slug` capture connections between related terms
+* **Context for archaic usage** - The `archaic_usage` field explains when a word is used in an older sense that differs from modern English
+* **Theological context** - The `theological_term` field explains when Swedenborg gives a word a specific doctrinal meaning
+* **Lightweight formatting** - Simple markers (`|word|` for keyword references, `_text_` for italics) are easy to parse or strip
+* **Self-documenting schema** - The companion `swedenborg-glossary.schema.json` provides full documentation of all fields
+
+This makes the glossary suitable for use in RAG (Retrieval-Augmented Generation) systems or as context for AI assistants working with Swedenborg translations.
+
+== License
+
+This work is licensed under https://creativecommons.org/licenses/by-nc-sa/4.0/[CC BY-NC-SA 4.0]. See the link:LICENSE[LICENSE] file for details.
+
