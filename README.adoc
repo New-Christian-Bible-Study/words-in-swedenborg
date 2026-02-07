@@ -4,7 +4,7 @@ This project makes the glossary from link:https://newchurchbooks.com/product/wor
 
 The project also includes code and support files to generate an AsciiDoc version of the book, essentially a digital reproduction of the original paperback. This can then be converted to PDF, ePub, and other formats.
 
-Thanks to the General Church Publication Committee for making this digital copy available for free (see the LICENSE file for details). Thanks also to the maintainer of https://www.swedenborgstudy.com/[swedenborgstudy.com] for providing the glossary in HTML format for conversion to JSON, and for providing image files for the diagrams in the book.
+Thanks to the General Church Publication Committee for making this digital copy available for free (see the LICENSE file for details). Thanks also to Professor Ian J. Thompson, the developer of https://www.swedenborgstudy.com/[swedenborgstudy.com], for providing the glossary in HTML format for conversion to JSON, and for providing image files for the diagrams in the book.
 
 == Project Structure
 
