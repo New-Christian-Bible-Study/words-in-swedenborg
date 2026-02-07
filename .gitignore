@@ -1,9 +1,12 @@
 .venv/
 __pycache__/
 *.pdf
+.stamps/
+
+# Generated AsciiDocfiles
 book/new-words.adoc
 book/archaic-words.adoc
-.stamps/
+book/swedenborg-glossary.adoc
 
 # Coverage
 .coverage
