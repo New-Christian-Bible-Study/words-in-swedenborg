@@ -11,10 +11,12 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(
 from glossary_entry import load_glossary
 from generate_word_lists import (
     get_new_words,
-    get_flagged_words,
+    get_theological_words,
+    get_archaic_words,
     format_new_words,
     format_archaic_words,
     generate_new_words_adoc,
+    generate_theological_words_adoc,
     generate_archaic_words_adoc,
 )
 
@@ -36,25 +38,36 @@ class TestGetWords(unittest.TestCase):
         self.assertIn('CONJUGIAL', words)
         self.assertEqual(len(words), 1)  # Both entries have same word, should dedupe
 
-    def test_get_flagged_words(self):
-        '''Test extracting flagged words (archaic_usage or theological_term) from glossary.'''
-        words = get_flagged_words(self.glossary)
+    def test_get_theological_words(self):
+        '''Test extracting theological words from glossary.'''
+        words = get_theological_words(self.glossary)
+        # test1-sample.json has charity marked as theological_term
+        self.assertIn('CHARITY', words)
+        self.assertEqual(len(words), 1)
+
+    def test_get_archaic_words(self):
+        '''Test extracting archaic words from glossary.'''
+        words = get_archaic_words(self.glossary)
         # test1-sample.json has accidental, sensuous, save marked as archaic_usage
-        # and charity marked as theological_term
         self.assertIn('ACCIDENTAL', words)
         self.assertIn('SENSUOUS', words)
         self.assertIn('SAVE', words)
-        self.assertIn('CHARITY', words)
-        self.assertEqual(len(words), 4)
+        self.assertNotIn('CHARITY', words)
+        self.assertEqual(len(words), 3)
 
     def test_get_new_words_returns_sorted(self):
         '''Test that new words are returned sorted.'''
         words = get_new_words(self.glossary)
         self.assertEqual(words, sorted(words))
 
-    def test_get_flagged_words_returns_sorted(self):
-        '''Test that flagged words are returned sorted.'''
-        words = get_flagged_words(self.glossary)
+    def test_get_theological_words_returns_sorted(self):
+        '''Test that theological words are returned sorted.'''
+        words = get_theological_words(self.glossary)
+        self.assertEqual(words, sorted(words))
+
+    def test_get_archaic_words_returns_sorted(self):
+        '''Test that archaic words are returned sorted.'''
+        words = get_archaic_words(self.glossary)
         self.assertEqual(words, sorted(words))
 
 
@@ -121,25 +134,33 @@ class TestGenerateAdoc(unittest.TestCase):
         self.assertIn('CONJUGIAL', result)
         self.assertTrue(result.endswith('\n'))
 
+    def test_generate_theological_words_adoc(self):
+        '''Test generating theological-words.adoc content.'''
+        result = generate_theological_words_adoc(self.glossary)
+        self.assertIn('== Theological Words', result)
+        self.assertIn('CHARITY', result)
+        self.assertTrue(result.endswith('\n'))
+
     def test_generate_archaic_words_adoc(self):
         '''Test generating archaic-words.adoc content.'''
         result = generate_archaic_words_adoc(self.glossary)
-        self.assertIn('== Misleading Words', result)  # Book title stays as "Misleading Words"
+        self.assertIn('== Archaic Words', result)
         self.assertIn('ACCIDENTAL', result)
         self.assertIn('SENSUOUS', result)
         self.assertIn('SAVE', result)
-        self.assertIn('CHARITY', result)  # theological_term also included
+        self.assertNotIn('CHARITY', result)
         self.assertTrue(result.endswith('\n'))
 
     def test_generate_new_words_adoc_has_header(self):
-        '''Test that new words adoc has explanatory header.'''
+        '''Test that new words adoc has explanatory header mentioning theological words.'''
         result = generate_new_words_adoc(self.glossary)
         self.assertIn('more than a dozen new words', result)
+        self.assertIn('theological', result)
 
     def test_generate_archaic_words_adoc_has_header(self):
         '''Test that archaic words adoc has explanatory header.'''
         result = generate_archaic_words_adoc(self.glossary)
-        self.assertIn('different meaning than the average reader would expect', result)
+        self.assertIn('older sense', result)
 
 
 if __name__ == '__main__':

@@ -18,7 +18,7 @@
 Opp. **RECEDE**
 
 [[accidental]]
-**ACCIDENTAL** (adj.) [misleading] = not essential; non-essential
+**ACCIDENTAL** (adj.) [archaic] = not essential; non-essential
 
 [[acclivity]]
 **ACCLIVITY** (n.) = upward slope +
@@ -85,7 +85,7 @@ See also: xref:limbus[**LIMBUS**], xref:cutaneous-envelope[**CUTANEOUS ENVELOPE*
 {nbsp}{nbsp}**CELESTIAL HEAVEN** = third or highest heaven
 
 [[charity]]
-**CHARITY** [misleading] = love of the neighbor
+**CHARITY** [theological] = love of the neighbor
 
 [[complex]]
 **COMPLEX** (n.) = whole made up of many connected parts
@@ -135,7 +135,7 @@ See also: xref:border[**BORDER**]
 == S
 
 [[save]]
-**SAVE** (prep.) [misleading] = except
+**SAVE** (prep.) [archaic] = except
 
 [[sensuous]]
-**SENSUOUS** (adj.) [misleading] = involving the senses; sensual
+**SENSUOUS** (adj.) [archaic] = involving the senses; sensual

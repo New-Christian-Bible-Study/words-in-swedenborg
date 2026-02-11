@@ -1,0 +1,7 @@
+[.text-center]
+*Edition version 1.0.1*
+
+Same content as the original book by Rev. Frank S. Rose, with terminology changes: "Theological Words" and "Archaic Words" sections and [theological] / [archaic] annotations instead of "Misleading Words" and [misleading].
+
+[.text-center]
+*License*

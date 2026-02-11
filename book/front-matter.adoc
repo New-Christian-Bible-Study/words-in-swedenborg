@@ -52,11 +52,12 @@ The entries fall into various categories:
 
 1. Latin, Greek and Hebrew
 2. New words
-3. Misleading words
-4. Adjectives used as nouns
-5. Phrases (such as "the celestial of the spiritual")
-6. Words that are not used as much now as they used to be (the bulk of the entries in this dictionary are in this group)
-7. Mistranslations (in some cases the translator made an error and so the meaning can only be discovered by looking at the original Latin)
+3. Theological words
+4. Archaic words
+5. Adjectives used as nouns
+6. Phrases (such as "the celestial of the spiritual")
+7. Words that are not used as much now as they used to be (the bulk of the entries in this dictionary are in this group)
+8. Mistranslations (in some cases the translator made an error and so the meaning can only be discovered by looking at the original Latin)
 
 Not included: place names, anatomical words, diseases, people's names and some unusual words from the Bible.
 

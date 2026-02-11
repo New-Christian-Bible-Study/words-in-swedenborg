@@ -16,6 +16,9 @@ include::front-matter.adoc[]
 include::new-words.adoc[]
 
 [preface]
+include::theological-words.adoc[]
+
+[preface]
 include::archaic-words.adoc[]
 
 include::swedenborg-glossary.adoc[]

@@ -18,6 +18,7 @@ _This digital copy of the book has been made freely available with the permissio
 
 {empty} +
 
+include::version.adoc[]
 
 _This work is licensed under a https://creativecommons.org/licenses/by-nc-sa/4.0/[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License]:_ +
 

@@ -76,9 +76,11 @@ def render_entry(
         metadata_parts.append(f'({entry.part_of_speech})')
     if entry.pronunciation:
         metadata_parts.append(f'/{entry.pronunciation}/')
-    # Add flags for archaic_usage/theological_term and new_word (both displayed as [misleading] in book)
-    if entry.archaic_usage or entry.theological_term:
-        metadata_parts.append('[misleading]')
+    # Add flags for theological_term, archaic_usage, and new_word
+    if entry.theological_term:
+        metadata_parts.append('[theological]')
+    if entry.archaic_usage:
+        metadata_parts.append('[archaic]')
     if entry.new_word:
         metadata_parts.append('[new word]')
 

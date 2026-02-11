@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """
-Generate new-words.adoc and archaic-words.adoc from swedenborg-glossary.json.
+Generate new-words.adoc, theological-words.adoc, and archaic-words.adoc from swedenborg-glossary.json.
 
-Extracts entries marked with new_word=true, archaic_usage=true, or
-theological_term=true and generates AsciiDoc files with formatted word lists
-for inclusion in the book.
+Extracts entries marked with new_word=true, theological_term, or archaic_usage
+and generates AsciiDoc files with formatted word lists for inclusion in the book.
 
 Usage:
     python generate_word_lists.py swedenborg-glossary.json book/
@@ -20,15 +19,23 @@ from glossary_entry import Glossary, load_glossary
 # Header text for new words section
 NEW_WORDS_HEADER = '''== New Words
 
-There are more than a dozen new words in Swedenborg's Writings, many of them appearing only a few times or in one particular translation. There are five that are frequently used:
+There are more than a dozen new words in Swedenborg's Writings, many of them appearing only a few times or in one particular translation. There are five that are frequently used. These are theological words—terms given a specific meaning in the Writings.
 
 // Generated from swedenborg-glossary.json - do not edit below this line
 '''
 
-# Header text for archaic words section (displayed as "Misleading Words" in book)
-ARCHAIC_WORDS_HEADER = '''== Misleading Words
+# Header text for theological words section
+THEOLOGICAL_WORDS_HEADER = '''== Theological Words
 
-There are many words that have a different meaning than the average reader would expect. Here are some of them:
+Some words are used with a specific doctrinal or theological meaning in Swedenborg's Writings. Here are some of them:
+
+// Generated from swedenborg-glossary.json - do not edit below this line
+'''
+
+# Header text for archaic words section
+ARCHAIC_WORDS_HEADER = '''== Archaic Words
+
+Some words are used in an older sense that differs from modern usage. Here are some of them:
 
 // Generated from swedenborg-glossary.json - do not edit below this line
 '''
@@ -43,11 +50,20 @@ def get_new_words(glossary: Glossary) -> list[str]:
     return sorted(set(words))
 
 
-def get_flagged_words(glossary: Glossary) -> list[str]:
-    """Extract words marked as archaic_usage or theological_term from the glossary."""
+def get_theological_words(glossary: Glossary) -> list[str]:
+    """Extract words marked as theological_term from the glossary."""
     words = []
     for entry in glossary:
-        if entry.archaic_usage or entry.theological_term:
+        if entry.theological_term:
+            words.append(entry.word.upper())
+    return sorted(set(words))
+
+
+def get_archaic_words(glossary: Glossary) -> list[str]:
+    """Extract words marked as archaic_usage from the glossary."""
+    words = []
+    for entry in glossary:
+        if entry.archaic_usage:
             words.append(entry.word.upper())
     return sorted(set(words))
 
@@ -84,16 +100,23 @@ def generate_new_words_adoc(glossary: Glossary) -> str:
     return NEW_WORDS_HEADER + formatted + '\n'
 
 
+def generate_theological_words_adoc(glossary: Glossary) -> str:
+    """Generate the complete theological-words.adoc content."""
+    words = get_theological_words(glossary)
+    formatted = format_archaic_words(words)
+    return THEOLOGICAL_WORDS_HEADER + formatted + '\n'
+
+
 def generate_archaic_words_adoc(glossary: Glossary) -> str:
     """Generate the complete archaic-words.adoc content."""
-    words = get_flagged_words(glossary)
+    words = get_archaic_words(glossary)
     formatted = format_archaic_words(words)
     return ARCHAIC_WORDS_HEADER + formatted + '\n'
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Generate new-words.adoc and archaic-words.adoc from swedenborg-glossary.json'
+        description='Generate new-words.adoc, theological-words.adoc, and archaic-words.adoc from swedenborg-glossary.json'
     )
     parser.add_argument(
         'input',
@@ -118,6 +141,12 @@ def main():
     new_words_content = generate_new_words_adoc(glossary)
     new_words_path.write_text(new_words_content, encoding='utf-8')
     print(f'Wrote {new_words_path}', file=sys.stderr)
+
+    # Generate theological-words.adoc
+    theological_words_path = output_dir / 'theological-words.adoc'
+    theological_words_content = generate_theological_words_adoc(glossary)
+    theological_words_path.write_text(theological_words_content, encoding='utf-8')
+    print(f'Wrote {theological_words_path}', file=sys.stderr)
 
     # Generate archaic-words.adoc
     archaic_words_path = output_dir / 'archaic-words.adoc'
